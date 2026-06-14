@@ -9,6 +9,8 @@ describe Turbulence::Configuration do
     its(:graph_type) { should eq('turbulence') }
     its(:scm_name)   { should eq('Git') }
     its(:scm)        { should eq(Turbulence::Scm::Git) }
+    its(:no_open)    { should eq(false) }
+    its(:output_dir) { should be_nil }
   end
 end
 
